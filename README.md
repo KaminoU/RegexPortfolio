@@ -20,7 +20,7 @@ In all the comment style I know. If you have any other useful regex pattern, fee
 
 ![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/comment_style.png)
 
-As you can notice, it's better to terminate the bloc with **:::**
+**As you can notice, it's better to terminate the bloc with :::**
 
 The find results will be output in a single file in which all the important information is gathered ^^
 ![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/sublime_find_res.png)
