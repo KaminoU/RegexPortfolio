@@ -20,8 +20,8 @@ In all the comment style I know. If you have any other useful regex pattern, fee
 
 ![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/comment_style.png)
 
-**You can also add your custom regex in the Regex Portfolio plugin**
-![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/context_menu.png)
+The find results will be output in a single file in which all the important information is gathered ^^
+![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/sublime_find_res.png)
 
 ## Documentation
 ### Regex Portfolio
@@ -36,7 +36,8 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
 
 ### User Portfolio (My Regex)
-You can add and save your own regex pattern, all your pattern are accessible via the context menu
+**You can also add your custom regex in the Regex Portfolio plugin**. All your pattern are accessible via the context menu
+![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/context_menu.png)
 
 After loading the wanted regex pattern, select the folder you want to scan.
 
