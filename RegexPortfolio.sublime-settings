@@ -1,0 +1,29 @@
+{
+    //
+    //  Custom User Regex Portfolio definition :
+    //
+    //      "user_regex_portfolio" is an array of dictionaries in which, each dictionary contains 3 keys ("name", "description" and "regex")
+    //
+    //      If the custom setting file is not empty :
+    //          Copy/Paste or Add only a dictionary {"name": "Hello", "description": "...", "regex": "..."} inside the array "user_regex_portfolio": [...]
+    //
+    //      Otherwise :
+    //          Copy/Paste all the array "user_regex_portfolio"
+    //
+    //  After copying, fill the 3 fields ("name", "description" and "regex") as wanted... =}
+    //
+
+    "user_regex_portfolio": [
+        {
+            "name": "Example",
+            "description": "This is an example",
+            "regex": "^Hello Sublime Text ^^$",
+        },
+
+        {
+            "name": "Space",
+            "description": "Find spaces",
+            "regex": "^\\s*",
+        }
+    ]
+}
