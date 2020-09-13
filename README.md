@@ -54,7 +54,7 @@ After loading the wanted regex pattern, select the folder you want to scan.
 For manual installation, run the following script in the Sublime Text terminal (``ctrl+` ``) which utilizes `git clone` (**you must have git installed**).
 
 ```python
-import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/KaminoU/regex_portfolio.git', 'Regex Portfolio'], 'working_dir': path})
+import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/KaminoU/regex_portfolio.git', 'regex_portfolio'], 'working_dir': path})
 ```
 
 Packages can be uninstalled via `Package Control: Remove Package`, located in the Command Palette.
