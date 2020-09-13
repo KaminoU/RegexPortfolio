@@ -35,7 +35,7 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 `Regex Portfolio: load todo` to load the todo regex pattern
 `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
 
-### User Portfolio
+### User Portfolio (My Regex)
 You can add and save your own regex pattern, all your pattern are accessible via the context menu
 
 After loading the wanted regex pattern, select the folder you want to scan.
