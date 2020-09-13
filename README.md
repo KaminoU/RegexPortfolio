@@ -31,11 +31,11 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 
 ![Regex Portfolio](https://github.com/KaminoU/regex_portfolio/blob/master/ss/command_palette.png)
 
-`Regex Portfolio: load changelog` to load the changelog regex pattern
-`Regex Portfolio: load keywords` to load the keywords regex pattern
-`Regex Portfolio: load synopsis` to load the synospis regex pattern
-`Regex Portfolio: load todo` to load the todo regex pattern
-`Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
+1. `Regex Portfolio: load changelog` to load the changelog regex pattern
+2. `Regex Portfolio: load keywords` to load the keywords regex pattern
+3. `Regex Portfolio: load synopsis` to load the synospis regex pattern
+4. `Regex Portfolio: load todo` to load the todo regex pattern
+5. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
 
 ### User Portfolio (My Regex)
 **You can also add your custom regex in the Regex Portfolio plugin**. All your pattern are accessible via the context menu
