@@ -6,7 +6,7 @@ import sublime_plugin
 
 _ACCENTED_CHAR = "áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ"
 REGEX_PREFIX_ = "^([#'\/\s\*]*)"
-_REGEX_SUFFIX = "\"=',;.•>_!\-\+\/\*\?\[\]\(\)\{\}\[\]]*[#\s\*]?"
+_REGEX_SUFFIX = "\"=',;.•>_!\\\\\-\+\/\*\?\[\]\(\)\{\}\[\]]*[#\s\*]?"
 _REGEX = {
 	"keywords": "REGEX_PREFIX_(keywords::)([\\n\s]*([\w\dACCENTED_CHAR_\-]*[,;\s]?)*)",
 	"synopsis": "REGEX_PREFIX_((synopsis|description|desc)::)([\\n\s]*([\w\dACCENTED_CHAR_REGEX_SUFFIX)*)",
