@@ -2,25 +2,25 @@
 
 **Save your useful regex pattern in a portfolio** [Sublime Text][subl].
 
-*This package is written by a lazy dev for lazy dev* =}
+If you want to save/keep some of your regex pattern, then Regex Portfolio could fit your needs.
 
-Regex pattern could be long and painful to type and test. That's why I want to centralize my fully tested regex in a file that I can reload anytime I need.
+In this package, you will also find some pre defined regex pattern, compatible with [Sphinx][sphx] directives
 
 [subl]: http://www.sublimetext.com/
+[sphx]: https://www.sphinx-doc.org/en/master/
 
 ## Main features
-**5 useful regex** for catching all the :
+**7 useful regex** for catching all the :
 * changelog
-* keywords
+* keyword
 * synopsis (desc or description)
 * todo
+* warning
+* note
 * and all the above keys at the same time
 
-In all the comment style I know. If you have any other useful regex pattern, feel free to share. And do not forget your git username for the credit ;)
-
-![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/comment_style.png)
-
-**As you can notice, it's better to terminate the bloc with :::**
+The regex will accept all the current most popular comment style I know (HTML and PHP Blade comment style are not supported)
+It is better to indent your comments (to be also compatible with Sphinx, just in case when you want to auto documentate later - mainly for python users)
 
 The find results will be output in a single file in which all the important information is gathered ^^
 ![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/sublime_find_res.png)
@@ -35,7 +35,9 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 2. `Regex Portfolio: load keywords` to load the keywords regex pattern
 3. `Regex Portfolio: load synopsis` to load the synospis regex pattern
 4. `Regex Portfolio: load todo` to load the todo regex pattern
-5. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
+5. `Regex Portfolio: load notes` to load the notes regex pattern
+6. `Regex Portfolio: load warnings` to load the notes regex pattern
+7. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
 
 ### User Portfolio (My Regex)
 **You can also add your custom regex in the Regex Portfolio plugin**. All your pattern are accessible via the context menu
@@ -51,7 +53,7 @@ After loading the wanted regex pattern, select the folder you want to scan.
 
 [pkg-ctrl]: http://wbond.net/sublime_packages/package_control
 
-For manual installation, run the following script in the Sublime Text terminal (``ctrl+` ``) which utilizes `git clone` (**you must have git installed**).
+For manual installation, run the following script in the Sublime Text terminal (``ctrl+` ``) which utilizes `git clone` (**you must have git installed with correct env path defined**).
 
 ```python
 import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/KaminoU/regex_portfolio.git', 'regex_portfolio'], 'working_dir': path})
@@ -61,7 +63,7 @@ Packages can be uninstalled via `Package Control: Remove Package`, located in th
 
 
 ## License
-Copyright (c) 2020 宀Кami宀 Michel TRUONG
+Copyright (c) 2020 宀Кami宀 (Michel TRUONG)
 
 Licensed under the MIT license.
 
