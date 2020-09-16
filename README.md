@@ -19,7 +19,8 @@ In this package, you will also find some pre defined regex pattern, compatible w
 * note
 * and all the above keys at the same time
 
-The regex will accept all the current most popular comment style I know (HTML and PHP Blade comment style are not supported)
+The regex will accept all the current most popular comment style I know (HTML and PHP Blade comment style are not supported).
+
 It is better to indent your comments (to be also compatible with Sphinx, just in case when you want to auto documentate later - mainly for python users)
 
 The find results will be output in a single file in which all the important information is gathered ^^
