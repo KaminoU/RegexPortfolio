@@ -4,15 +4,16 @@ import sublime
 import sublime_plugin
 
 
-_ACCENTED_CHAR = "áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ"
-REGEX_PREFIX_ = "^([#'\/\s\*]*)"
-_REGEX_SUFFIX = "\"=',;.•>_!\\\\\-\+\/\*\?\[\]\(\)\{\}\[\]]*[#\s\*]?"
+REGEX_PREFIX_ = "(?m)^(?!(^\s*$))([ \\t#'\/\*]*(\.+)?)"
+_REGEX_SUFFIX = "(?:\R*(?>( *[ \\t#'\/\*]*)[ \\t]+)(?![\*:]).*)*"
 _REGEX = {
-	"keywords": "REGEX_PREFIX_(keywords::)([\\n\s]*([\w\dACCENTED_CHAR_\-]*[,;\s]?)*)",
-	"synopsis": "REGEX_PREFIX_((synopsis|description|desc)::)([\\n\s]*([\w\dACCENTED_CHAR_REGEX_SUFFIX)*)",
-	"changelog": "REGEX_PREFIX_(changelog::)([\\n\s]*([\w\dACCENTED_CHAR_REGEX_SUFFIX)*)",
-	"todo": "REGEX_PREFIX_(todo::)([\\n\s]*([\w\dACCENTED_CHAR_REGEX_SUFFIX)*)",
-	"all_flag": "REGEX_PREFIX_((keywords|synopsis|description|desc|changelog|todo)::)([\\n\s]*([\w\dACCENTED_CHAR_REGEX_SUFFIX)*)",
+	"keywords": "REGEX_PREFIX_( ?:?(keyword)s?::?.*)_REGEX_SUFFIX",
+	"synopsis": "REGEX_PREFIX_( ?:?(synopsis|description|desc)s?::?.*)_REGEX_SUFFIX",
+	"changelog": "REGEX_PREFIX_( ?:?(changelog)s?::?.*)_REGEX_SUFFIX",
+	"todo": "REGEX_PREFIX_( ?:?(todo)s?::?.*)_REGEX_SUFFIX",
+	"note": "REGEX_PREFIX_( ?:?(note)s?::?.*)_REGEX_SUFFIX",
+	"warning": "REGEX_PREFIX_( ?:?(warning)s?::?.*)_REGEX_SUFFIX",
+	"all_flag": "REGEX_PREFIX_( ?:?(keyword|synopsis|description|desc|changelog|todo|note|warning)s?::?.*)_REGEX_SUFFIX",
 }
 
 SETTINGS_FILE = 'RegexPortfolio.sublime-settings'
@@ -153,7 +154,6 @@ class FindPanel(sublime_plugin.WindowCommand):
 			window.run_command("insert", {
 				"characters": _REGEX[regex_pattern] \
 					.replace("REGEX_PREFIX_", REGEX_PREFIX_)
-					.replace("ACCENTED_CHAR", _ACCENTED_CHAR)
 					.replace("_REGEX_SUFFIX", _REGEX_SUFFIX)
 				}
 			)
