@@ -3,7 +3,9 @@
   {"caption": "Regex Portfolio: load keywords", "command": "load_regex", "args": {"regex_pattern": "keywords"}},
   {"caption": "Regex Portfolio: load synopsis", "command": "load_regex", "args": {"regex_pattern": "synopsis"}},
   {"caption": "Regex Portfolio: load todo", "command": "load_regex", "args": {"regex_pattern": "todo"}},
-  {"caption": "Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)", "command": "load_regex", "args": {"regex_pattern": "all_flag"}},
+  {"caption": "Regex Portfolio: load notes", "command": "load_regex", "args": {"regex_pattern": "note"}},
+  {"caption": "Regex Portfolio: load warnings", "command": "load_regex", "args": {"regex_pattern": "warning"}},
+  {"caption": "Regex Portfolio: load all flag (keywords, synopsis, changelog, todo, notes & warnings)", "command": "load_regex", "args": {"regex_pattern": "all_flag"}},
 
   {
     "caption": "Regex Portfolio: manage My Regex",
