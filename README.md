@@ -37,7 +37,7 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 4. `Regex Portfolio: load todo` to load the todo regex pattern
 5. `Regex Portfolio: load notes` to load the notes regex pattern
 6. `Regex Portfolio: load warnings` to load the notes regex pattern
-7. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo)` to load all the regex pattern at the same time
+7. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo, notes & warnings)` to load all the regex pattern at the same time
 
 ### User Portfolio (My Regex)
 **You can also add your custom regex in the Regex Portfolio plugin**. All your pattern are accessible via the context menu
