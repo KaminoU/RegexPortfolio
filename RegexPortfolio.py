@@ -22,7 +22,7 @@ custom_settings = None
 
 CONTEXT_SUBLIME_MENU = "Context.sublime-menu"
 CONTEXT_JSON_MAIN_LEVEL = 0
-CONTEXT_JSON_USER_LEVEL = 5
+CONTEXT_JSON_USER_LEVEL = 7
 
 
 def cache_path():
