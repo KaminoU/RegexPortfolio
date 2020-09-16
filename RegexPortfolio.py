@@ -5,7 +5,7 @@ import sublime_plugin
 
 
 REGEX_PREFIX_ = "(?m)^(?!(^\s*$))([ \\t#'\/\*]*(\.+)?)"
-_REGEX_SUFFIX = "(?:\R*(?>( *[ \\t#'\/\*]*)[ \\t]+)(?![\*:"']).*)*"
+_REGEX_SUFFIX = "(?:\R*(?>( *[ \\t#'\/\*]*)[ \\t]+)(?![\*:\"']).*)*"
 _REGEX = {
 	"keywords": "REGEX_PREFIX_( ?:?(keyword)s?::?.*)_REGEX_SUFFIX",
 	"synopsis": "REGEX_PREFIX_( ?:?(synopsis|description|desc)s?::?.*)_REGEX_SUFFIX",
