@@ -41,7 +41,9 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 7. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo, notes & warnings)` to load all the regex pattern at the same time
 
 ### User Portfolio (My Regex)
-**You can also add your custom regex in the Regex Portfolio plugin**. All your pattern are accessible via the context menu
+**You can also add your custom regex in the Regex Portfolio plugin**.
+
+All your pattern are accessible via the context menu
 ![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/context_menu.png)
 
 After loading the wanted regex pattern, select the folder you want to scan.
@@ -50,7 +52,7 @@ After loading the wanted regex pattern, select the folder you want to scan.
 
 
 ## Installation
-`Regex Portfolio` is available via [Package Control][pkg-ctrl] and can be found as `Regex Portfolio`.
+`Regex Portfolio` is also available via [Package Control][pkg-ctrl] and can be found as `Regex Portfolio`.
 
 [pkg-ctrl]: http://wbond.net/sublime_packages/package_control
 
