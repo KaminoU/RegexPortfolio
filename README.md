@@ -10,6 +10,7 @@ In this package, you will also find some pre defined regex pattern, compatible w
 [sphx]: https://www.sphinx-doc.org/en/master/
 
 ## Main features
+
 **7 useful regex** for catching all the :
 * changelog
 * keyword
@@ -27,7 +28,9 @@ The find results will be output in a single file in which all the important info
 ![screenshot](https://github.com/KaminoU/regex_portfolio/blob/master/ss/sublime_find_res.png)
 
 ## Documentation
+
 ### Regex Portfolio
+
 All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windows/Linux, `Command + Shift + P` on Mac.
 
 ![Regex Portfolio](https://github.com/KaminoU/regex_portfolio/blob/master/ss/command_palette.png)
@@ -41,6 +44,7 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 7. `Regex Portfolio: load all flag (keywords, synopsis, changelog, todo, notes & warnings)` to load all the regex pattern at the same time
 
 ### User Portfolio (My Regex)
+
 **You can also add your custom regex in the Regex Portfolio plugin**.
 
 All your pattern are accessible via the context menu
@@ -52,6 +56,7 @@ After loading the wanted regex pattern, select the folder you want to scan.
 
 
 ## Installation
+
 `Regex Portfolio` is also available via [Package Control][pkg-ctrl] and can be found as `Regex Portfolio`.
 
 [pkg-ctrl]: http://wbond.net/sublime_packages/package_control
@@ -66,6 +71,7 @@ Packages can be uninstalled via `Package Control: Remove Package`, located in th
 
 
 ## License
+
 Copyright (c) 2020 宀Кami宀 (Michel TRUONG)
 
 Licensed under the MIT license.
