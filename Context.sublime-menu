@@ -1,5 +1,5 @@
 [{
-	"id": "Regex Portfolio",
+	"id": "regex_portfolio",
 	"children": [
 		{"command": "load_regex", "args": {"regex_pattern": "changelog"}, "caption": "load changelog"},
 		{"command": "load_regex", "args": {"regex_pattern": "keywords"}, "caption": "load keywords"},
@@ -13,7 +13,7 @@
 			"children": [
 				{
 					"command": "edit_settings",
-					"args": {"base_file": "${packages}/Regex Portfolio/RegexPortfolio.sublime-settings", "default": "// Copy/Paste the user Regex Portfolio template from the left panel into here \"RegexPortfolio.sublime-settings\"\n\n{\n\t$0\n}\n"},
+					"args": {"base_file": "${packages}/regex_portfolio/RegexPortfolio.sublime-settings", "default": "// Copy/Paste the user Regex Portfolio template from the left panel into here \"RegexPortfolio.sublime-settings\"\n\n{\n\t$0\n}\n"},
 					"caption": "Manage..."
 				},
 					{"command": "load_regex", "args": {"user_regex": true, "regex_pattern": "^Hello Sublime Text ^^$"}, "caption": "Example (This is an example)"},
