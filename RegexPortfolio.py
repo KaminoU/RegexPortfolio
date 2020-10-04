@@ -24,7 +24,6 @@ CONTEXT_SUBLIME_MENU = "Context.sublime-menu"
 CONTEXT_JSON_MAIN_LEVEL = 0
 CONTEXT_JSON_USER_LEVEL = 7
 
-
 def cache_path():
 	return os.path.join(sublime.cache_path(), __package__)
 
@@ -33,10 +32,65 @@ def packages_path():
 	return os.path.join(sublime.packages_path(), __package__)
 
 
-def build_user_context_menu_file():
-	sublime_context_menu = os.path.join(packages_path(), CONTEXT_SUBLIME_MENU)
+def get_sublime_context_menu():
+	return os.path.join(cache_path(), CONTEXT_SUBLIME_MENU)
 
-	with open(sublime_context_menu, "r") as json_in_file:
+
+def build_default_context_menu():
+	if not os.path.isdir(cache_path()):
+		os.makedirs(cache_path())
+
+	context_menu =[{
+		"id": "regex_portfolio",
+		"children": [{
+			"command": "load_regex",
+			"args": {"regex_pattern": "changelog"},
+			"caption": "load changelog"}, {
+			"command": "load_regex",
+			"args": {"regex_pattern": "keywords"},
+			"caption": "load keywords"}, {
+			"command": "load_regex",
+			"args": {"regex_pattern": "synopsis"},
+			"caption": "load synopsis"}, {
+			"command": "load_regex",
+			"args": {"regex_pattern": "todo"},
+			"caption": "load todo"}, {
+			"caption": "load notes",
+			"args": {"regex_pattern": "note"},
+			"command": "load_regex"}, {
+			"caption": "load warnings",
+			"args": {"regex_pattern": "warning"},
+			"command": "load_regex"}, {
+			"command": "load_regex",
+			"args": {"regex_pattern": "all_flag"},
+			"caption": "load all flag"}, {
+			"id": "user_regex_portfolio",
+			"children": [{
+				"command": "edit_settings",
+				"args": {
+					"base_file": "${packages}/Regex Portfolio/RegexPortfolio.sublime-settings",
+					"default": "// Copy/Paste the user Regex Portfolio template from the left panel into here \"RegexPortfolio.sublime-settings\"\n\n{\n\t$0\n}\n"
+					},
+				"caption": "Manage..."}, {
+				"command": "load_regex",
+				"args": {"user_regex": True, "regex_pattern": "^Hello Sublime Text ^^$"},
+				"caption": "Example (This is an example)"}, {
+				"command": "load_regex",
+				"args": {"user_regex": True, "regex_pattern": "^\\s*"},
+				"caption": "Space (Find spaces)"
+			}],
+			"caption": "My Regex"
+		}],
+		"caption": "Regex Portfolio"
+	}]
+
+
+	with open(get_sublime_context_menu(), 'w') as json_out_file:
+		json.dump(context_menu, json_out_file)
+
+
+def build_user_context_menu_file():
+	with open(get_sublime_context_menu(), "r") as json_in_file:
 		context_menu = json.load(json_in_file)
 
 	user_regex_def = regex_portfolio_settings()
@@ -52,18 +106,13 @@ def build_user_context_menu_file():
 
 	context_menu[CONTEXT_JSON_MAIN_LEVEL]["children"][CONTEXT_JSON_USER_LEVEL]["children"] = _user_menu
 
-	with open(sublime_context_menu, 'w') as json_out_file:
+	with open(get_sublime_context_menu(), 'w') as json_out_file:
 		json.dump(context_menu, json_out_file)
 
 	# sublime_plugin.reload_plugin(__package__)
 
 
 def regex_portfolio_settings():
-	view = sublime.active_window().active_view()
-
-	if view.settings().has(USER_REGEX_PORTFOLIO_KEY):
-		return view.settings().get(USER_REGEX_PORTFOLIO_KEY)
-
 	global custom_settings
 	if custom_settings is None:
 		custom_settings = sublime.load_settings(SETTINGS_FILE)
@@ -165,4 +214,5 @@ class LoadRegex(FindPanel):
 
 
 def plugin_loaded():
+	build_default_context_menu()
 	pass
