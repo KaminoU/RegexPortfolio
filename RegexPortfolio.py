@@ -68,7 +68,7 @@ def build_default_context_menu():
 			"children": [{
 				"command": "edit_settings",
 				"args": {
-					"base_file": "${packages}/Regex Portfolio/RegexPortfolio.sublime-settings",
+					"base_file": "${packages}/RegexPortfolio/RegexPortfolio.sublime-settings",
 					"default": "// Copy/Paste the user Regex Portfolio template from the left panel into here \"RegexPortfolio.sublime-settings\"\n\n{\n\t$0\n}\n"
 					},
 				"caption": "Manage..."}, {
