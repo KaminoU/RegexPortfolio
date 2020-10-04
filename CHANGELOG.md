@@ -1,6 +1,6 @@
 # Regex Portfolio changelog
 
-1.1.1 - Fix context menu bug
+1.1.1 - Fix context menu
 
 1.1.0 - More accurate regex with Sphinx compatibilities
 
