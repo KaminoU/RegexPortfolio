@@ -25,7 +25,7 @@ The regex will accept all the current most popular comment style I know (HTML an
 It is better to indent your comments (to be also compatible with Sphinx, just in case when you want to auto documentate later - mainly for python users)
 
 The find results will be output in a single file in which all the important information is gathered ^^
-![screenshot](https://raw.githubusercontent.com/KaminoU/regex_portfolio/master/ss/sublime_find_res.png)
+![screenshot](https://i.imgur.com/uhknkuT.png)
 
 ## Documentation
 
@@ -33,7 +33,7 @@ The find results will be output in a single file in which all the important info
 
 All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windows/Linux, `Command + Shift + P` on Mac.
 
-![Regex Portfolio](https://raw.githubusercontent.com/KaminoU/regex_portfolio/master/ss/command_palette.png)
+![Regex Portfolio](https://i.imgur.com/8VR3CBx.png)
 
 1. `Regex Portfolio: load changelog` to load the changelog regex pattern
 2. `Regex Portfolio: load keywords` to load the keywords regex pattern
@@ -48,7 +48,7 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 **You can also add your custom regex in the Regex Portfolio plugin**.
 
 All your pattern are accessible via the context menu
-![screenshot](https://raw.githubusercontent.com/KaminoU/regex_portfolio/master/ss/context_menu.png)
+![screenshot](https://i.imgur.com/Lb1u9iR.png)
 
 After loading the wanted regex pattern, select the folder you want to scan.
 
@@ -57,7 +57,7 @@ After loading the wanted regex pattern, select the folder you want to scan.
 
 ## Installation
 
-`Regex Portfolio` is also available via [Package Control][pkg-ctrl] and can be found as `Regex Portfolio`.
+`Regex Portfolio` is also available via [Package Control][pkg-ctrl] and can be found as `RegexPortfolio`.
 
 [pkg-ctrl]: http://wbond.net/sublime_packages/package_control
 
