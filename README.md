@@ -1,4 +1,4 @@
-# Regex Portfolio
+# RegexPortfolio
 
 **Save your useful regex pattern in a portfolio** [Sublime Text][subl].
 
@@ -29,11 +29,11 @@ The find results will be output in a single file in which all the important info
 
 ## Documentation
 
-### Regex Portfolio
+### RegexPortfolio
 
 All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windows/Linux, `Command + Shift + P` on Mac.
 
-![Regex Portfolio](https://i.imgur.com/8VR3CBx.png)
+![RegexPortfolio](https://i.imgur.com/8VR3CBx.png)
 
 1. `Regex Portfolio: load changelog` to load the changelog regex pattern
 2. `Regex Portfolio: load keywords` to load the keywords regex pattern
@@ -45,7 +45,7 @@ All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windo
 
 ### User Portfolio (My Regex)
 
-**You can also add your custom regex in the Regex Portfolio plugin**.
+**You can also add your custom regex in the RegexPortfolio plugin**.
 
 All your pattern are accessible via the context menu
 ![screenshot](https://i.imgur.com/Lb1u9iR.png)
